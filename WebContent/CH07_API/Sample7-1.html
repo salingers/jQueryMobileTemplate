@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<div id="home" data-role="page">
+	<div data-role="header">
+    	<h1>jQuery Mobile API</h1>
+    </div>
+    <div data-role="content">
+        <a href="Other.html" data-role="button" data-icon="arrow-r" data-iconpos="right">External Next</a>
+    	<a href="#detail" data-role="button" data-icon="arrow-r" data-iconpos="right">Inside Next</a>
+        <a href="#detail" data-role="button" data-icon="arrow-r" data-iconpos="right" data-rel="dialog">Inside Dialog</a>
+    </div>
+</div>
+
+<div id="detail" data-role="page">
+	<div data-role="header">
+    	<h1>Detail Page</h1>
+    </div>
+    <div data-role="content">
+    	<a data-rel="back" data-role="button" data-icon="arrow-l">BACK</a>
+    </div>
+</div>
+
+</body>
+</html>

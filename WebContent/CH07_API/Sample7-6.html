@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+	$(document).bind("mobileinit", mobileinitHandler);
+	function mobileinitHandler(){
+	
+	}
+</script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div id="home" data-ucom-role="page">
+	<div data-ucom-role="header">
+    	<h1>jQuery Mobile API</h1>
+    </div>
+    <div data-ucom-role="content">
+        <a href="NoPage.html" data-ucom-role="button" data-ucom-icon="arrow-r" data-ucom-iconpos="right">External Next</a>
+    	<a href="#detail" data-ucom-role="button" data-ucom-icon="arrow-r" data-ucom-iconpos="right">Inside Next</a>
+        <a href="#detail" data-ucom-role="button" data-ucom-icon="arrow-r" data-ucom-iconpos="right" data-ucom-rel="dialog">Inside Dialog</a>
+    </div>
+  </div>
+
+  <div id="detail" data-ucom-role="page">
+	<div data-ucom-role="header">
+    	<h1>Detail Page</h1>
+    </div>
+    <div data-ucom-role="content">
+    	<a id="backButton" data-ucom-rel="back" data-ucom-role="button" data-ucom-icon="arrow-l">BACK</a>
+    </div>
+  </div>
+
+</body>
+</html>

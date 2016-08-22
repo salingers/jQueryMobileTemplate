@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Mobile API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script>
+			$(document).on("mobileinit", mobileinitHandler);
+			function mobileinitHandler() {
+				$.mobile.ns = "jmp-";
+				$(document).on("pageshow", ":jqmData(role='page')", pageHandler);
+			}
+
+			function pageHandler() {
+				var whichPageId = $.mobile.activePage.attr("id");
+				alert("This is " + whichPageId + " page!");
+			}
+
+        </script>
+    </head>
+
+    <body>
+
+        <div id="home" data-jmp-role="page">
+            <div data-jmp-role="header">
+                <h1>jQuery Mobile API</h1>
+            </div>
+            <div data-jmp-role="content">
+                <a href="#detail" data-jmp-role="button" data-jmp-icon="arrow-r" data-jmp-iconpos="right">Inside Next</a>
+                <a id="resultButton1" href="#" data-jmp-role="button" data-jmp-icon="arrow-r" data-jmp-iconpos="right" data-jmp-rel="dialog">Get Result</a>
+            </div>
+        </div>
+
+        <div id="detail" data-jmp-role="page">
+            <div data-jmp-role="header">
+                <h1>Detail Page</h1>
+            </div>
+            <div data-jmp-role="content">
+                <a id="backButton" data-jmp-rel="back" data-jmp-role="button" data-jmp-icon="arrow-l">BACK</a>
+                <a id="resultButton2" href="#" data-jmp-role="button" data-jmp-icon="arrow-r" data-jmp-iconpos="right" data-jmp-rel="dialog">Get Result</a>
+            </div>
+        </div>
+
+    </body>
+</html>

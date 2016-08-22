@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Toolbars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+	$(document).ready(function(e) {
+		$("#doneButton").click(function(e) {
+			alert("DONE!")
+		});
+	});
+</script>
+</head>
+
+<body>
+
+	<div data-role="page">
+		<div data-role="header">
+			<a id="doneButton" href="#" data-icon="check" class="ui-btn-right">DONE</a>
+			<a href="#help" data-icon="plus" data-transition="slide"
+				class="ui-btn-left">HELP</a>
+			<h1>Setting</h1>
+		</div>
+		<div data-role="content">
+			<h1>Setting View</h1>
+			<p>You may put ListView here to list some setting controls.</p>
+		</div>
+	</div>
+
+	<div id="help" data-role="page" data-theme="b" data-add-back-btn="true">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>HELP</h1>
+		</div>
+		<div data-role="content">
+			<h1>HELP content</h1>
+			<p>Some help information can write here.</p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Toolbars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+	<div data-role="header">
+    	<h1>Navigation</h1>
+    </div>
+	<div data-role="content">
+    	<h1>Navigation View</h1>
+        <p>You can create navigation bar on the bottom of page.</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+    	<div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li><a href="#page1" data-icon="gear" data-transition="none">PAGE1</a></li>
+                <li><a href="#page2" data-icon="grid" data-transition="none">PAGE2</a></li>
+                <li><a href="#page3" data-icon="info" data-transition="none">PAGE3</a></li>
+                <li><a href="#page4" data-icon="star" data-transition="none">PAGE4</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="page1" data-role="page">
+	<div data-role="header" data-theme="a" data-add-back-btn="true" >
+    	<h1>PAGE 1</h1>
+    </div>
+    <div data-role="content">
+    	<h1>Page1's content</h1>
+    </div>
+</div>
+
+<div id="page2" data-role="page" data-add-back-btn="true">
+	<div data-role="header" data-theme="b" data-add-back-btn="true" >
+    	<h1>PAGE 2</h1>
+    </div>
+    <div data-role="content">
+    	<h1>Page2's content</h1>
+    </div>
+</div>
+
+<div id="page3" data-role="page" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true" >
+    	<h1>PAGE 3</h1>
+    </div>
+    <div data-role="content">
+    	<h1>Page3's content</h1>
+    </div>
+</div>
+
+<div id="page4" data-role="page" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true" >
+    	<h1>PAGE 4</h1>
+    </div>
+    <div data-role="content">
+    	<h1>Page4's content</h1>
+    </div>
+</div>
+
+</body>
+</html>

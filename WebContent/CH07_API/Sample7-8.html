@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile API</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<style>
+.swipe{
+	height:400px;
+	background:url(images/arrow_left.png) no-repeat, url(images/arrow_right.png) no-repeat, url(images/finger.png) no-repeat;
+	background-position:left center, right center, center center;
+	cursor:pointer;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+	$(document).on("mobileinit", mobileinitHandler);
+	
+	function mobileinitHandler(){
+		$.mobile.defaultPageTransition = "slide";
+
+    }
+	
+</script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<div id="home" data-role="page">
+	<div data-role="header">
+    	<h1>jQuery Mobile Event</h1>
+    </div>
+    <div data-role="content" class="swipe">
+        
+    </div>
+</div>
+
+<div id="left" data-role="page">
+	<div data-role="header">
+    	<h1>LEFT Page</h1>
+    </div>
+    <div data-role="content">
+    	<a href="#home" data-role="button" data-icon="arrow-r" data-iconpos="right">BACK</a>
+    </div>
+</div>
+
+<div id="right" data-role="page">
+	<div data-role="header">
+    	<h1>RIGHT Page</h1>
+    </div>
+    <div data-role="content">
+    	<a href="#home" data-role="button" data-icon="arrow-l" data-iconpos="left" data-direction="reverse">BACK</a>
+    </div>
+</div>
+
+
+</body>
+</html>

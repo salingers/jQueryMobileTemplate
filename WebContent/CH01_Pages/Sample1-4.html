@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+div[data-role="content"] h1 {
+	text-shadow: 0px 3px 2px #999999;
+}
+
+p {
+	font: 1em/1.5 Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div id="home" data-role="page">
+		<div data-role="header">
+			<h1>jQuery Mobile</h1>
+		</div>
+		<div data-role="content">
+			<h1>jQuery Mobile: Touch-Optimized Web Framework for Smartphones
+				& Tablets</h1>
+			<p>
+				A unified, HTML5-based user interface system for all popular mobile
+				device platforms, built on the rock-solid jQuery and jQuery UI
+				foundation. Its lightweight code is built with progressive
+				enhancement, and has a flexible, easily themeable design. <a
+					href="#detail" data-role="button">Read More</a>
+			</p>
+		</div>
+		<div data-role="footer">
+			<h1>Seriously cross-platform with HTML5</h1>
+		</div>
+	</div>
+
+
+	<div id="detail" data-role="page">
+		<div data-role="header">
+			<h1>Detail</h1>
+		</div>
+		<div data-role="content">
+			<h1>Easy to use: Try it now!</h1>
+			<p>jQuery Mobile's emphasis on semantic markup and progressive
+				enhancement makes it super easy to use. If you know basic HTML, you
+				can start building mobile sites right away. Try this cool
+				drag-and-drop UI builder to explore what the library can do, or
+				check out some of the resources below to learn more.
+			<ul>
+				<li><a href="#">Demos & documentation</a></li>
+				<li><a href="#"> Resources: Books, plugins, tutorials</a></li>
+			</ul>
+			<a href="#home" data-role="button" data-icon="back">Back HOME</a> 
+			<a
+				href="#home" data-role="button" data-mini="true" data-icon="back">Back
+				HOME</a>
+				<a
+				href="#home" data-role="button" data-button-inline="true">Back
+				HOME</a>
+
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>
